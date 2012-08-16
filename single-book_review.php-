@@ -23,8 +23,8 @@ function child_get_book_review_field() {
 
 
 /** Add the after post section */
-add_action( 'genesis_after_post_content', 'eleven40_after_book_review' );
-function eleven40_after_book_review() {
+add_action( 'genesis_after_post_content', 'wjc_after_book_review' );
+function wjc_after_book_review() {
    if ( ! is_singular(array( 'book_review' ) ) )
        return;
    genesis_widget_area( 'after-post', array(
