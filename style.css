@@ -106,7 +106,7 @@ body {
 
 .wrap {
 	margin: 0 auto;
-	width: 1140px;
+	width: 1110px;
 }
 
 
@@ -245,7 +245,7 @@ body {
 #content-sidebar-wrap {
 	float: right;
 	padding: 0 0 5px;
-	width: 950px;
+	width: 920px;
 }
 
 #content {
@@ -255,7 +255,7 @@ body {
 	box-shadow: 0 0 5px #999;
 	float: left;
 	padding: 25px 40px;
-	width: 628px;
+	width: 600px;
 }
 /* width: 600px */
 .post {
@@ -438,7 +438,9 @@ h5 {
 	margin: 0 0 10px;
 }
 
-.cpt h4 {
+.cpt h4,
+.cpt h4 a,
+.cpt h4 a:visited {
 	font-family: 'Oswald', sans-serif;
 	font-weight: normal;
 	line-height: 1.25;
@@ -556,42 +558,6 @@ h4 {
 }
 
 
-/* Post Info
------------------------------------------------------------- 
-
-.post-info {
-	color: #999;
-	font-size: 12px;
-	margin: 0 0 20px;
-	text-transform: lowercase;
-}
-
-.date {
-	text-transform: uppercase;
-}
-
-.twitter-share-button {
-	margin: 0 0 -5px;
-}
-
-
-/* Post Meta
------------------------------------------------------------- 
-
-.post-meta {
-	background-color: #fffff;
-	
-}
-
-.post-meta-single {
-	background-color: #f3f3f3;
-	clear: both;
-	font-size: 14px;
-	margin: 0 0 20px;
-	padding:  10px 0;
-}
-
-*/
 
 
 /* Post Info Mind Stream
@@ -612,17 +578,23 @@ h4 {
 	margin: 0 0 -5px;
 }
 
-/* Post Meta Mind Stream
+
+
+/* Post Meta Mocha
 ------------------------------------------------------------ */
 
-.post-meta-single {
+.post-meta {
+	border-top: 1px solid #e3dbce;
 	clear: both;
-	color: #999;
+	color: #8f8174;
 	font-size: 12px;
-	margin: 0 0 25px;
-	text-transform: lowercase;
+	margin: 0 0 40px;
+	padding: 5px 0 0;
 }
 
+.home .post-meta {
+	display: none;
+}
 
 /* Author Box
 ------------------------------------------------------------ */
@@ -749,7 +721,7 @@ img.alignright {
 	display: inline;
 	float: right;
 	font-size: 13px;
-	width: 242px;
+	width: 240px;
 }
 /* width: 270px */
 
@@ -1334,6 +1306,50 @@ background: none;
     clear: both;
     padding-left: 0;
 }
+
+/* Content Boxes
+------------------------------------------------------------ */
+
+.content-box-blue,
+.content-box-gray,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.content-box-blue {
+    background-color: #d8ecf7;
+    border: 1px solid #afcde3;
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+    border: 1px solid #bdbdbd;
+}
+
+.content-box-green {
+    background-color: #d9edc2;
+    border: 1px solid #b2ce96;
+}
+
+.content-box-purple {
+    background-color: #e2e2f9;
+    border: 1px solid #bebde9;
+}
+
+.content-box-red {
+    background-color: #f9dbdb;
+    border: 1px solid #e9b3b3;
+}
+
+.content-box-yellow {
+    background-color: #fef5c4;
+    border: 1px solid #fadf98;
+}
 /* Responsive Design
 ------------------------------------------------------------ */
 
@@ -1349,9 +1365,13 @@ background: none;
 
 	#content {
 		padding: 25px 30px;
+		width: 470px;
+	}
+/* #content {
+		padding: 25px 30px;
 		width: 468px;
 	}
-
+	*/
 /* width: 440px */
 
 	.footer-widgets-1 {
